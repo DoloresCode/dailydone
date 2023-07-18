@@ -31,8 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-# DEBUG = 'RENDER' not in os.environ
-DEBUG = False
+DEBUG = 'RENDER' not in os.environ
+# DEBUG = False
 # DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = ['http://127.0.0.1:8000/', 'http://localhost:8000', '.localhost', '127.0.0.1', '[::1]']
