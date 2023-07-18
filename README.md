@@ -47,9 +47,7 @@ Remember to keep your personal details safe and secure when using DailyDone for 
 
 ## Wireframes
 
-<img width="1386" alt="Public_Homepage" src="https://github.com/DoloresCode/dailydone/assets/117631390/c80b94f4-2a98-4688-bcd0-4ce66b2ee628">
-
-<img width="1139" alt="Public_Homepage2" src="https://github.com/DoloresCode/dailydone/assets/117631390/cf80305a-2185-40cc-9b02-cb6c4bdeaf57">
+<img width="707" alt="dailydone_public_homepage" src="https://github.com/DoloresCode/dailydone/assets/117631390/f5006cd5-d193-4002-80ac-8d9f2baf899e">
 
 <img width="1130" alt="Private_Homepage" src="https://github.com/DoloresCode/dailydone/assets/117631390/d4aa804e-9ab2-46ee-b7ca-c0b6f4c30d7a">
 
