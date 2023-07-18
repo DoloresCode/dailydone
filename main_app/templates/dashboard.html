@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block title %}Dashboard{% endblock %}
+
 {% block content %}
     <div class="dashboard-container">
         <div class="admin-greeting-dashb">Hello, {{ request.user.username }}</div>
