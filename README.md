@@ -33,7 +33,7 @@ Key Features:
 
 
 ## Deployed App
-[] (link)
+[https://dailydone.onrender.com/] (link)
 
 
 ## Get Started

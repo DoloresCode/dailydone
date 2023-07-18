@@ -31,11 +31,16 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
+
 DEBUG = 'RENDER' not in os.environ
-# DEBUG = False
+
+# If we want to use it with Render and set DEBUG in te environment variables not to have to change here all the time
 # DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = ['http://127.0.0.1:8000/', 'http://localhost:8000', '.localhost', '127.0.0.1', '[::1]']
+ALLOWED_HOSTS = []
+
+# Test
+# ALLOWED_HOSTS = ['http://127.0.0.1:8000/', 'http://localhost:8000', '.localhost', '127.0.0.1', '[::1]']
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
@@ -199,33 +204,33 @@ LOGOUT_REDIRECT_URL = 'public_home'
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'filters': {
-        'require_debug_false': {
-            '()': 'django.utils.log.RequireDebugFalse'
-        }
-    },
-    'formatters': {
-        'verbose': {
-            'format': '[contactor] %(levelname)s %(asctime)s %(message)s'
-        },
-    },
-    'handlers': {
-        # Send all messages to console
-        'console': {
-            'level': 'DEBUG',
-            'class': 'logging.StreamHandler',
-        },    
-    },
-    'loggers': {
-        # This is the "catch all" logger
-        '': {
-            'handlers': ['console'],
-            'level': 'DEBUG',
-            'propagate': False,
-        },
-    }
-}
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'filters': {
+#         'require_debug_false': {
+#             '()': 'django.utils.log.RequireDebugFalse'
+#         }
+#     },
+#     'formatters': {
+#         'verbose': {
+#             'format': '[contactor] %(levelname)s %(asctime)s %(message)s'
+#         },
+#     },
+#     'handlers': {
+#         # Send all messages to console
+#         'console': {
+#             'level': 'DEBUG',
+#             'class': 'logging.StreamHandler',
+#         },    
+#     },
+#     'loggers': {
+#         # This is the "catch all" logger
+#         '': {
+#             'handlers': ['console'],
+#             'level': 'DEBUG',
+#             'propagate': False,
+#         },
+#     }
+# }
 
