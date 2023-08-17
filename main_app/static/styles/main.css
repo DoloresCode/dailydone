@@ -122,12 +122,62 @@ body {
     width: 100%;
     text-align: center;
     margin-left: -9rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 
+@media (max-width: 768px) {
+    .home-section.home-public {
+        flex-direction: column;  
+        align-items: center;     
+        height: auto;            
+        padding: 1rem;
+    }
+
+    .home-left-public {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .home-title-public {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    /* Center signup button and increase its size for easier clickability */
+    .home-left-signup-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .signup-button-public {
+        font-size: 16px;
+        padding: 14px 28px;  
+    }
+
+    .container-image-homep-pub {
+        width: 100%;  
+        height: auto; 
+        margin-top: 1rem; 
+    }
+    
+    .image-homepage-public {
+        margin-left: 0;
+        max-width: 90%;   /* Restrict the width to avoid overflow */
+        height: auto;     /* auto height to keep aspect ratio */
+        display: block;   
+        margin: 0 auto; 
+        margin-bottom: 0.1rem;
+    }
+}
+
+
+
+
+
+
 /* Screen with a max-width of 768px */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .container-image-homep-pub {
         width: 80%;
         height: 80%;
@@ -138,7 +188,7 @@ body {
         height: auto;
         margin-left: 0;
     }
-}
+} */
 
 
 /* Private Homepage */
@@ -1285,7 +1335,7 @@ p.has-text-centered a.signup-link:hover {
 
 
 /* signup Page*/
-/* Same login a little */
+/* Same as login a little */
 
 h1.signup-title {
     text-align: center;
@@ -1363,6 +1413,38 @@ p.has-text-centered a.login-link:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+    /* Adjust the form width and padding for smaller screens */
+    .signup-form {
+        width: 90%; 
+        padding: 15px;
+    }
+
+    h1.signup-title {
+        font-size: 2em;
+        margin-top: 1rem;
+    }
+
+    /* Adjustments for input fields to be more mobile-friendly */
+    .signup-form input[type="text"], .signup-form input[type="password"], .signup-form input[type="submit"] {
+        font-size: 1em; 
+    }
+
+    /* Adjustments to reduce excess spacing */
+    .signup-form .fieldWrapper {
+        margin-top: 0.5rem;
+    }
+
+    /* Center-align the text */
+    p.has-text-centered {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .helptext {
+        font-size: 10px;
+    }
+}
 
 /* User Profile Page */
 
