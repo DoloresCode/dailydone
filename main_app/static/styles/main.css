@@ -172,25 +172,6 @@ body {
 }
 
 
-
-
-
-
-/* Screen with a max-width of 768px */
-/* @media screen and (max-width: 768px) {
-    .container-image-homep-pub {
-        width: 80%;
-        height: 80%;
-    }
-
-    .image-homepage-public {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-    }
-} */
-
-
 /* Private Homepage */
 
 .home-section {
