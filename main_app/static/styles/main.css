@@ -167,17 +167,22 @@ body {
 
 @media (min-width: 1312px) {
     .container-image-homep-pub {
-        margin-top: -80%;
+        margin-top: -75%;
+        padding-top: 0.5rem;
+        margin-bottom: -10rem;
     }
 
     .home-left-public {
         padding-bottom: 0; 
         /* margin-bottom: 10rem; */
     }
+    /* .home-left-signup-btn {
+        margin-bottom: 2rem;
+    } */
 
-    .footer {
+    /* .footer {
         margin-top: -6rem;
-    }
+    } */
     
 }
 
