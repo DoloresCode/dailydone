@@ -53,18 +53,20 @@ body {
 
 /* Public Homepage */
 
-
-.home-section.home-public{
+.home-section.home-public {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: 150vh; /* increase the height not to overlap the footer */
+    height: 150vh; 
     width: 100%;
     padding: 2rem;
 }
 
+.home-left-public, .home-right {
+    flex: 1; 
+}
+
 .home-left-public {
-    flex: 1;
     padding-right: 2rem;
 }
 
@@ -79,7 +81,6 @@ body {
     margin-bottom: 2rem;
     color: rgb(16, 16, 149);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin-bottom: 0.5em; 
     text-align: center;
 }
 
@@ -107,12 +108,8 @@ body {
     transform: scale(1.05);
 }
 
-.home-right {
-    flex: 2;
-}
-
 .container-image-homep-pub {
-    width: 80%;
+    width: 100%;
     height: 80%;
 }
 
@@ -121,10 +118,7 @@ body {
     height: 100%;
     width: 100%;
     text-align: center;
-    margin-left: -9rem;
-    margin-bottom: 1rem;
 }
-
 
 @media (max-width: 768px) {
     .home-section.home-public {
@@ -150,6 +144,7 @@ body {
         text-align: center;
         margin-top: 1rem;
     }
+
     .signup-button-public {
         font-size: 16px;
         padding: 14px 28px;  
@@ -163,13 +158,37 @@ body {
     
     .image-homepage-public {
         margin-left: 0;
-        max-width: 90%;   /* Restrict the width to avoid overflow */
-        height: auto;     /* auto height to keep aspect ratio */
+        max-width: 90%;   
+        height: auto;     
         display: block;   
         margin: 0 auto; 
-        margin-bottom: 0.1rem;
     }
 }
+
+@media (min-width: 1312px) {
+    .container-image-homep-pub {
+        margin-top: -80%;
+    }
+
+    .home-left-public {
+        padding-bottom: 0; 
+        /* margin-bottom: 10rem; */
+    }
+
+    .footer {
+        margin-top: -6rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 /* Private Homepage */
