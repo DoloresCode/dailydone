@@ -1880,7 +1880,7 @@ Change background color on mouse-over
     color: white;
     transform: scale(1.5);
     position: absolute;
-    bottom: 200px; /* move arrow */
+    bottom: 150px; /* move arrow */
     right: 30px; /* move arrow */
 }
 
@@ -1900,6 +1900,7 @@ Change background color on mouse-over
         grid-template-columns: 1fr; 
         grid-template-rows: repeat(4, auto); 
         height: auto; 
+        margin-bottom: -6rem; /* Remove part of the white extra space after the content and the footer*/
     }
 
     .admin-greeting-dashb,
@@ -1914,27 +1915,42 @@ Change background color on mouse-over
     }
 
     .profile-h2-dashboard {
-        font-size: 1.2em;
+        font-size: 1.5em;
+
+        margin-top: -3.5rem;
+        margin-left: -4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
-    .tasks-dashb-container svg, 
-    .project-dashb-container svg {
-        bottom: 50px; 
+    .profile-dashb-container {
+        grid-row: 4;
+        background-position: center;
+        background-size: cover; 
+        padding: 4em 0;
+        margin-top: -34.50rem;
+        margin-bottom: 1.8rem;
+        padding: 5rem;
+    }
+
+    .tasks-dashb-container svg {
+        bottom: 135px; 
+        right: 15px; 
         transform: scale(1.3); 
     }
-
-    .profile-dashb-container a {
-        top: 10px;
-        right: 10px;
-        transform: scale(1.3);
+    .project-dashb-container svg {
+        bottom: 95px; 
+        right: 15px; 
+        transform: scale(1.3); 
     }
 }
 
 /* Mobile devices */
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .dashboard-container {
         grid-template-rows: repeat(4, auto);
         padding: 0.5em;
+        margin-bottom: -6rem; /* Remove part of the white extra space after the content and the footer*/
     }
 
     .admin-greeting-dashb,
@@ -1967,6 +1983,13 @@ Change background color on mouse-over
         transform: scale(1); 
     }
     
+    .profile-h2-dashboard {
+        margin-top: -1.5rem;
+        margin-left: -2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1rem;
+    }
 
     .profile-dashb-container {
         grid-row: 4;
@@ -1975,6 +1998,7 @@ Change background color on mouse-over
         padding: 4em 0;
         margin-top: -30.5rem;
         margin-bottom: 1.8rem;
+        padding: 2rem;
     }
 
     .profile-dashb-container a {
