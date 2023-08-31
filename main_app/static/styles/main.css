@@ -1931,24 +1931,50 @@ Change background color on mouse-over
 }
 
 /* Mobile devices */
-@media (max-width: 480px) {
-    .dashb-h1, .dashb-h2 {
-        font-size: 1.2em;
+@media only screen and (max-width: 480px) {
+    .dashboard-container {
+        grid-template-rows: repeat(4, auto);
+        padding: 0.5em;
     }
 
-    .profile-h2-dashboard {
+    .admin-greeting-dashb,
+    .tasks-dashb-container,
+    .project-dashb-container,
+    .profile-dashb-container {
+        width: 100%;
+        margin: 0;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .dashb-h1 {
+        font-size: 1.1em;
+    }
+
+    .dashb-h2, .profile-h2-dashboard {
         font-size: 1em;
+        text-align: left;
     }
 
     .tasks-dashb-container svg {
-        bottom: 130px; /* Adjust the arrow's position to go up */
-        right: 15px; /* arrow to go right*/
-        transform: scale(1.1); /* Resize the arrow */
-    } 
+        bottom: 130px; 
+        right: 15px; 
+        transform: scale(1); 
+    }
     .project-dashb-container svg {
-        bottom: 100px; 
-        right: 15px;
-        transform: scale(1.1); 
+        bottom: 95px; 
+        right: 15px; 
+        transform: scale(1); 
+    }
+    
+
+    .profile-dashb-container {
+        grid-row: 4;
+        background-position: center;
+        background-size: cover; 
+        padding: 4em 0;
+        margin-top: -30.5rem;
+        margin-bottom: 1.8rem;
     }
 
     .profile-dashb-container a {
