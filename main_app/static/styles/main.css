@@ -1326,7 +1326,7 @@ body {
 }
 
 
-/* Task Detail PAge */
+/* Task Detail Page */
 
 #task-detail {
     max-width: 600px;
@@ -1467,6 +1467,7 @@ body {
 .Go-back-link-tasks:hover {
     color: #0050B5;
 }
+
 
 
 /* Login Page */
