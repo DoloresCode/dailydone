@@ -829,7 +829,7 @@ body {
 }
 
 
-/* Detail Page - Forr Small Screen */
+/* Detail Page - For Small Screen */
 @media (max-width: 768px) {
 .project-detail {
     margin: 10px;
@@ -865,6 +865,51 @@ body {
     font-size: 12px;
 }
 }
+
+
+/* Detail Page - (Mobile) */
+@media (max-width: 480px) {
+    .project-detail {
+        margin: 5px;
+        overflow-x: scroll; /* Adds a horizontal scrollbar */
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .tasks-title {
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+    }
+
+    .task-item {
+        font-size: 10px;
+    }
+
+    .go-back-link-detail-pg {
+        margin-bottom: 0.5rem;
+    }
+
+    .buttons-upt-dlt {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .task-title, .task-importance, .task-due_date {
+        font-size: 10px;
+    }
+
+    .task-table {
+        width: 100%;
+        overflow-x: auto; /* Ensures the table is scrollable horizontally */
+    }
+}
+
 
 
 /* Project Update Page */
