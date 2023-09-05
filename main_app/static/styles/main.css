@@ -1785,6 +1785,60 @@ Change background color on mouse-over
 }
 
 
+/* Tablet view */
+@media (max-width: 768px) {
+    .completed-pjct-container {
+        max-width: 600px;
+        padding: 0.5em;
+    }
+
+    .completed-pjct-title {
+        font-size: 28px;
+        margin-top: 1rem;
+    }
+
+    .completed-pjct-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .completed-pjct-item {
+        padding: 0.5em;
+    }
+
+    .completed-pjct-name {
+        font-size: 1.25em;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .completed-pjct-container {
+        max-width: 340px;
+        padding: 0.5em;
+        min-height: calc(100vh - 100px); 
+    }
+
+    .completed-pjct-title {
+        font-size: 24px;
+        margin-top: 0.5rem;
+    }
+
+    .completed-pjct-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .completed-pjct-item {
+        padding: 0.5em;
+    }
+
+    .completed-pjct-name {
+        font-size: 1em;
+    }
+}
+
+
 /* Delete Profile Page */
 
 .image-delete-profile {
