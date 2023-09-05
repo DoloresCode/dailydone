@@ -1167,6 +1167,57 @@ body {
 }
 
 
+/* Tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin-left: 15px;
+    }
+
+    .title_tasks-l, .sub-title-tasks-pg-1, .sub-title-tasks-pg-2 {
+        font-size: 28px;
+    }
+
+    .task-table th, .task-table td, .completed-tasks-table th, .completed-tasks-table td {
+        margin-left: 6px;
+    }
+    
+    .task-table, .completed-tasks-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .container {
+        padding-left: 10px;
+    }
+
+    .title_tasks-l, .sub-title-tasks-pg-1, .sub-title-tasks-pg-2 {
+        font-size: 24px;
+    }
+
+    .task-table th, .task-table td, .completed-tasks-table th, .completed-tasks-table td {
+        padding: 4px;
+    }
+    
+    .task-table, .completed-tasks-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .project-list-link-taskpg, .create-task-button {
+        text-align: center;
+    }
+    
+    .create-task-button .icon, .update-button .icon, .delete-button .icon {
+        font-size: 16px;
+    }
+}
+
+
 /* Task Create Page */
 
 .title_tasks-l2 {
