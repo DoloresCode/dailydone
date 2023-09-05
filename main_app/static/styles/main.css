@@ -1012,28 +1012,33 @@ body {
     background-color: #AA02FF;
 }
 
+
+/* Tablet styles */
 @media (max-width: 768px) {
-    /* Project Delete Page - When Small Screen */
-
-.picture-delete-p {
-    height: 200px;
+    .picture-delete-p { 
+        height: 300px; 
+    }
+    
+    .delete-page-title {
+        font-size: 20px;
+    }
 }
 
-.delete-page-title {
-    font-size: 20px;
-}
+/* Mobile styles */
+@media (max-width: 480px) {
+    .picture-delete-p { 
+        height: 300px; 
+    }
 
-.buttons-delete-pg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: -4rem;
-}
+    .delete-page-title {
+        font-size: 18px;
+    }
+    
+    .buttons-delete-pg {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.button.is-primary.custom-cancel-button {
-    background-color: #AA02FF;
-    margin-top: 1rem;
-}
 }
 
 
